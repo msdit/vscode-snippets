@@ -2,7 +2,12 @@
     "name": "bimebazar-code-snippets",
     "displayName": "bimebazar code snippets",
     "description": "",
-    "version": "0.0.1",
+	"publisher": "msdit",
+    "version": "0.0.2",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/msdit/vscode-snippets.git"
+	},
     "engines": {
         "vscode": "^1.55.0"
     },
