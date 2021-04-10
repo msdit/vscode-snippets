@@ -1,0 +1,65 @@
+{
+    "React Stateless Functional Component": {
+		"prefix": "ims",
+		"body": [
+			"import styles from './${1:TM_FILENAME_BASE}.module.scss'"
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+},
+{
+    "React Stateless Functional Component": {
+		"prefix": "imc",
+		"body": [
+			"import styles from './${1:TM_FILENAME_BASE}.module.css'"
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+},
+{
+    "React Stateless Functional Component": {
+		"prefix": "imctx",
+		"body": [
+			"import { ${1:TM_FILENAME_BASE}Context } from './${1:TM_FILENAME_BASE}Context'"
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+},
+{
+    "React Stateless Functional Component": {
+		"prefix": "bcsm",
+		"body": [
+			".${1:TM_FILENAME_BASE}Root {}"
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+},
+{
+    "React Stateless Functional Component": {
+		"prefix": "bctx",
+		"body": [
+			"import { createContext } from 'react'",
+            "export const ${1:TM_FILENAME_BASE}Context = createContext({})",
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+},
+{
+    "React Stateless Functional Component": {
+		"prefix": "tsrsfc",
+		"body": [
+			"import {FunctionComponent} from 'react';",
+			"",
+			"interface I${1:TM_FILENAME_BASE}Props {$2",
+			"}",
+			"",
+			"const ${1:}: FunctionComponent<I${1:}Props> = (props) => {",
+			"\treturn (<div>$0</div>)",
+			"};",
+			"",
+			"export default ${1:};",
+			""
+		],
+		"description": "Create a React Stateless Functional Component."
+	}
+}
