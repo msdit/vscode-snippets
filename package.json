@@ -3,7 +3,8 @@
     "displayName": "bimebazar code snippets",
     "description": "",
 	"publisher": "msdit",
-    "version": "0.0.2",
+	"icon": "images/logo.png",
+    "version": "0.0.9",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/msdit/vscode-snippets.git"
@@ -16,10 +17,39 @@
     ],
     "contributes": {
         "snippets": [
-            {
-                "language": "typescript",
-                "path": "./snippets/snippets.code-snippets"
-            }
+
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/snippets.code-snippets"
+			}
         ]
     }
 }

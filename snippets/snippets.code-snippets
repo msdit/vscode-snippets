@@ -1,50 +1,61 @@
 {
-    "StyledComponent_SCSS": {
-		"prefix": "bims",
-		"body": [
-			"import styles from './${1:TM_FILENAME_BASE}.module.scss'"
-		],
-	},
-    "StyledComponent_CSS": {
-		"prefix": "bimc",
-		"body": [
-			"import styles from './${1:TM_FILENAME_BASE}.module.css'"
-		],
-	},
-    "ImportContext": {
-		"prefix": "bimctx",
-		"body": [
-			"import { ${1:TM_FILENAME_BASE}Context } from './${1:TM_FILENAME_BASE}Context'"
-		],
-	},
-    "CreateStyledComponent": {
-		"prefix": "bsc",
-		"body": [
-			".${1:TM_FILENAME_BASE}Root {}"
-		],
-	},
-    "CreateContext": {
-		"prefix": "bctx",
-		"body": [
-			"import { createContext } from 'react'",
-            "export const ${1:TM_FILENAME_BASE}Context = createContext({})",
-		],
-		"description": "Create a React Stateless Functional Component."
-	},
-    "CreateTS": {
-		"prefix": "bts",
-		"body": [
-			"import {FunctionComponent} from 'react';",
-			"",
-			"interface I${1:TM_FILENAME_BASE}Props {$2",
-			"}",
-			"",
-			"const ${1:}: FunctionComponent<I${1:}Props> = (props) => {",
-			"\treturn (<div>$0</div>)",
-			"};",
-			"",
-			"export default ${1:};",
-			""
-		],
-	}
+  "StyledComponent_SCSS": {
+    "prefix": "bims",
+    "body": ["import styles from './${1:${TM_FILENAME_BASE}}.module.scss'"]
+  },
+  "StyledComponent_CSS": {
+    "prefix": "bimc",
+    "body": ["import styles from './${1:${TM_FILENAME_BASE}}.module.css'"]
+  },
+  "ImportContext": {
+    "prefix": "bimctx",
+    "body": [
+      "import { ${1:${TM_FILENAME_BASE}}Context } from './${1:${TM_FILENAME_BASE}}Context'"
+    ]
+  },
+  "CreateStyledComponent": {
+    "prefix": "bsc",
+    "body": [".${1:${TM_FILENAME_BASE}}Root {}"]
+  },
+  "CreateContext": {
+    "prefix": "bctx",
+    "body": [
+      "import { createContext } from 'react'",
+      "export const ${1:${TM_FILENAME_BASE}}Context = createContext({})"
+    ],
+    "description": "Create a React Stateless Functional Component."
+  },
+  "CreateTS": {
+    "prefix": "bts",
+    "body": [
+      "import {FunctionComponent} from 'react';",
+      "",
+      "interface I${1:${TM_FILENAME_BASE}}Props {$2",
+      "}",
+      "",
+      "const ${1:}: FunctionComponent<I${1:}Props> = (props) => {",
+      "\treturn (<div>$0</div>)",
+      "};",
+      "",
+      "export default ${1:};",
+      ""
+    ]
+  },
+  "CreateTSWithChildrenProps": {
+    "prefix": "btsc",
+    "body": [
+      "import {FunctionComponent} from 'react';",
+      "",
+      "interface I${1:${TM_FILENAME_BASE}}Props {$2",
+      "\tchildren: React.ReactNode;",
+      "}",
+      "",
+      "const ${1:}: FunctionComponent<I${1:}Props> = (props) => {",
+      "\treturn (<div>$0</div>)",
+      "};",
+      "",
+      "export default ${1:};",
+      ""
+    ]
+  }
 }
